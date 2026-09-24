@@ -28,3 +28,13 @@ body { margin: 0; font-family: system-ui, sans-serif; background: #f4f0ea; }
 .mini-grid .cell { background: #16a085; aspect-ratio: 1; opacity: 0.85; }
 label { display: block; margin: 0.5rem 0; }
 button { margin-right: 0.5rem; padding: 0.4rem 0.8rem; }
+.mode-switch { margin-bottom: 0.75rem; }
+.mode-switch button { border: 1px solid #16a085; background: #fff; color: #16a085; cursor: pointer; }
+.mode-switch button.active { background: #16a085; color: #fff; }
+.split-table { margin-top: 0.5rem; }
+.split-table .total-row td { font-weight: 700; background: #eafaf1; }
+.tag { background: #8e44ad; color: #fff; font-size: 0.75rem; padding: 0.1rem 0.4rem; border-radius: 3px; margin-left: 0.3rem; }
+.run-row { cursor: pointer; }
+.run-row:hover { background: #f0ebe3; }
+.detail-row td { background: #faf7f2; }
+.saved-hint { color: #27ae60; }

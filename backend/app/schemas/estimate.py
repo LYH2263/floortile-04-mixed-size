@@ -9,6 +9,16 @@ class EstimateRequest(BaseModel):
     note: str = ""
 
 
+class MixedEstimateRequest(BaseModel):
+    room_id: int
+    tile_id: int
+    aux_tile_id: int
+    main_ratio_pct: float
+    waste_pct: float | None = None
+    save: bool = False
+    note: str = ""
+
+
 class EstimateResponse(BaseModel):
     room_id: int
     tile_id: int
