@@ -17,3 +17,16 @@ def get_all() -> dict:
 def get_waste_pct() -> float:
     raw = get_all().get("waste_pct", str(DEFAULT_WASTE_PCT))
     return float(raw)
+
+
+def set_waste_pct(value: float) -> None:
+    conn = connect()
+    try:
+        conn.execute(
+            "INSERT INTO settings(key, value) VALUES ('waste_pct', ?) "
+            "ON CONFLICT(key) DO UPDATE SET value=excluded.value",
+            (str(float(value)),),
+        )
+        conn.commit()
+    finally:
+        conn.close()

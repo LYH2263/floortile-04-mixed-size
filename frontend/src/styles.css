@@ -28,3 +28,10 @@ body { margin: 0; font-family: system-ui, sans-serif; background: #f4f0ea; }
 .mini-grid .cell { background: #16a085; aspect-ratio: 1; opacity: 0.85; }
 label { display: block; margin: 0.5rem 0; }
 button { margin-right: 0.5rem; padding: 0.4rem 0.8rem; }
+.mode-switch { display: flex; gap: 1.5rem; margin: 0.5rem 0; }
+.mode-switch label { display: inline-flex; align-items: center; gap: 0.3rem; margin: 0; }
+.ok { color: #16a085; font-weight: 600; }
+tr.clickable { cursor: pointer; }
+tr.clickable:hover { background: #f0f7f5; }
+.run-detail { background: #fff; padding: 1rem; margin-top: 1rem; border-left: 4px solid #16a085; }
+.total-row td { background: #f4f0ea; }
